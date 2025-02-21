@@ -1,0 +1,15 @@
+public class FibonacciSequence {
+
+    public static int calculateFibonacci(int term) {
+        if (term < 0) throw new IllegalArgumentException("Input cannot be negative");
+        if (term == 0) return 0;
+        if (term == 1) return 1;
+        return calculateFibonacci(term - 1) + calculateFibonacci(term - 2);
+    }
+
+    public static void main(String[] args) {
+        int position = 10;
+        int fibonacciValue = calculateFibonacci(position);
+        System.out.println("The " + position + "th term in the Fibonacci sequence is " + fibonacciValue + ".");
+    }
+}
