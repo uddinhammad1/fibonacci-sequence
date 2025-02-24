@@ -24,8 +24,12 @@ public class FibonacciSequenceTest {
             fail("Should throw an IllegalArgumentException for negative input");
         } catch (IllegalArgumentException e) {
             // Test passed
+
         }
     }
-
+    @Test
+    public void testFibonacciAdditionalCase() {
+        assertEquals(21, FibonacciSequence.calculateFibonacci(8)); // Test for 8th term
+    }
 
 }
