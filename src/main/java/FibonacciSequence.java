@@ -10,6 +10,7 @@ public class FibonacciSequence {
     public static void main(String[] args) {
         int position = 10;
         int fibonacciValue = calculateFibonacci(position);
-        System.out.println("The " + position + "th term in the Fibonacci sequence is " + fibonacciValue + ".");
+        System.out.println("Fibonacci term at position " + position + " is " + fibonacciValue + ".");
+
     }
 }
