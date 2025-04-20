@@ -4,9 +4,9 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/uddinhammad1/fibonacci-sequence.git'
-            }
-        }
+                git branch: 'main', url: 'https://github.com/uddinhammad1/fibonacci-sequence.git'
+    }
+}
 
         stage('Build with Maven') {
             steps {
