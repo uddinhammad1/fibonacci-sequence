@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/uddinhammad1/midterm.git' // Replace with your GitHub repo
+                git 'https://github.com/uddinhammad1/fibonacci-sequence.git'
             }
         }
 
